@@ -1,23 +1,26 @@
 <template>
   <div class="common-layout">
     <el-container>
-      <el-aside width="200px" style="height: 100vh;background-color: red;">
-		  <sider></sider>
-	  </el-aside>
-      <el-container>
-        <el-header style="background-color: blue;">Header</el-header>
-        <el-main style="background-color: green;">Main</el-main>
-      </el-container>
+      <el-header id="HeaderBar">
+        
+        <headerBar></headerBar>
+      </el-header>
+      <el-main id="MainBar">
+        <router-views></router-views>
+      </el-main>
     </el-container>
   </div>
 </template>
 
-
-<script setup>
-import sider from './sider.vue'
-</script>
-
 <style scoped>
-	
+#HeaderBar {
+  padding: 0px;
+}
 
 </style>
+
+<script setup>
+import headerBar from "./Header.vue"
+// import mainBar from "./Main.vue"
+
+</script>
