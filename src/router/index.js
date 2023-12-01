@@ -4,16 +4,29 @@ import Layout from '../views/Layout/Layout.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    
     {
       path: '/',
       name: 'layout',
       component: Layout,
+      redirect: "dashboard",
       children: [
         {
-          path: '/index',
-          name: 'index',
-          component: () => import('../views/Layout/Main.vue')
-        }
+          path: '/dashboard',
+          name: 'dashboard',
+          component: () => import('../views/Layout/index.vue')
+        },
+        {
+          path: '/tips',
+          name: 'tips',
+          component: () => import('../views/Layout/tips.vue')
+        },
+        {
+          path: '/update',
+          name: 'update',
+          component: () => import('../views/Layout/update.vue')
+        },
+        
       ]
     },
     
