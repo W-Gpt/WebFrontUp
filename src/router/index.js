@@ -9,6 +9,7 @@ const router = createRouter({
       path: '/',
       name: 'layout',
       component: Layout,
+<<<<<<< HEAD
       redirect: "dashboard",
       children: [
         {
@@ -27,6 +28,30 @@ const router = createRouter({
           component: () => import('../views/Layout/update.vue')
         },
         
+=======
+<<<<<<< HEAD
+      redirect: "dashboard",
+      children: [
+        {
+          path: '/dashboard',
+          name: 'dashboard',
+          component: () => import('../views/Layout/index.vue')
+        },
+        {
+          path: '/tips',
+          name: 'tips',
+          component: () => import('../views/Layout/tips.vue')
+        },
+        
+=======
+      children: [
+        {
+          path: '/index',
+          name: 'index',
+          component: () => import('../views/Layout/Main.vue')
+        }
+>>>>>>> b646921b2ea7c2dc95a3bf54f222d1057165b78f
+>>>>>>> c129dc5faae2d1cfbf2c0fd35567d69b21cce378
       ]
     },
     
