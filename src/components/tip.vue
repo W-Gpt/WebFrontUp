@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
     <el-card class="memo-box" :shadow="true">
       <p>{{ tipsid }}</p>
       <h2>{{ tipstype }}</h2>
@@ -36,13 +35,3 @@
     color: #666;
   }
   </style>
-=======
-    <h1>tips界面</h1>
-</template>
-
-<script>
-</script>
-
-<style>
-</style>
->>>>>>> c129dc5faae2d1cfbf2c0fd35567d69b21cce378

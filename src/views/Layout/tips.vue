@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
     <div>
       <tip v-for="memo in memos" :key="memo.id" :tipsid="memo.id" :tipslevel="memo.level" :tipstype="memo.type" :tipsthings="memo.things" />
     </div>
@@ -50,18 +49,3 @@
   
   <style>
   </style>
-=======
-
-    <tip></tip>
-</template>
-
-<script setup>
-import { ref } from 'vue'
-import { useRouter } from 'vue-router'
-import tip from '../../components/tip.vue'
-
-</script>
-
-<style>
-</style>
->>>>>>> c129dc5faae2d1cfbf2c0fd35567d69b21cce378
