@@ -8,7 +8,7 @@
         </headerBar>
       </el-header>
       <el-main id="MainBar">
-        <router-view style="height: 93.8vh;"/>
+        <router-view style="height: calc(100vh - 60px);"/>
       </el-main>
     </el-container>
   </div>

@@ -5,6 +5,7 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     
+    
     {
       path: '/',
       name: 'layout',
@@ -27,6 +28,11 @@ const router = createRouter({
           name: 'update',
           component: () => import('../views/Layout/update.vue')
         },
+        {
+          path: '/user',
+          name: 'user',
+          component: () => import('../views/Layout/user.vue')
+        },//测试专用
         
 
 
